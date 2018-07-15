@@ -1,0 +1,66 @@
+mkdir test && cd test
+npm init -y
+npm install --save-dev webpack webpack-dev-server -g
+npm install -g --save-dev webpack-cli
+//copy ./dist,./src,webpack.config.js,package.json in help folder to project folder
+webpack -p
+
+remove: 
+npm uninstall -g webpack
+npm uninstall -g webpack-cli
+
+if npm had webpack and webpack
+mkdir test && cd test
+npm init -y
+webpack -v
+webpack-cli -v
+npm install webpack webpack-dev-server
+npm install webpack-cli
+//copy
+webpack -p
+
+
+conten in webpack.config.js
+___________________________________________________________________________________________
+var webpack = require('webpack');
+
+var config = {
+  context: __dirname + '/src', // `__dirname` is root of project and `src` is source
+  entry: {
+    app: './app.js',
+  },
+  output: {
+    path: __dirname + '/dist', // `dist` is the destination
+    filename: 'bundle.js',
+  },
+};
+
+module.exports = config;
+___________________________________________________________________________________________
+conten in package.json
+___________________________________________________________________________________________
+{
+  "name": "webpack-2-setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ENV=development webpack --watch",
+    "pro": "ENV=production webpack",
+    "devserver": "webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.16.0",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
+___________________________________________________________________________________________
+./dist/bundle.js(empty)
+./src/app.js
+conten in app.js(alert("Hello world"))
+___________________________________________________________________________________________
+
