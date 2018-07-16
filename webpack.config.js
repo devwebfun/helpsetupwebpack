@@ -27,6 +27,7 @@ module.exports = config;
 //re install 
 //>>npm install webpack --save
 //change app.js to app.jsx
+//change entry: './src/app.js', to entry: './src/app.jsx',
 //jsx to js
 // 	module: {
 // 		rules: [
