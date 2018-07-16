@@ -12,3 +12,15 @@ var config = {
 };
 
 module.exports = config;
+// run >> webpack -p
+
+
+//or
+// module.exports = {
+// 	entry: './app/app.js',
+// 	output: {
+// 		path: __dirname,
+// 		filename: './public/bundle.js'
+// 	}
+// };
+// run >> webpack
