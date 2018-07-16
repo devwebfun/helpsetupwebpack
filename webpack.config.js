@@ -24,3 +24,5 @@ module.exports = config;
 // 	}
 // };
 // run >> webpack
+// auto build
+// >> webpack -w 
