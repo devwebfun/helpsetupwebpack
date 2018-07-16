@@ -17,10 +17,10 @@ module.exports = config;
 
 //or
 // module.exports = {
-// 	entry: './app/app.js',
+// 	entry: './src/app.js',
 // 	output: {
 // 		path: __dirname,
-// 		filename: './public/bundle.js'
+// 		filename: './dist/bundle.js'
 // 	}
 // };
 // run >> webpack
